@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/hoadonimg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_margin="5dp"
+        android:maxWidth="200dp"
+        android:minWidth="100dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:src="@drawable/backgound_dangnhap" />
+
+    <FrameLayout
+     android:layout_width="wrap_content"
+
+     android:layout_height="wrap_content">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"
+         android:layout_marginRight="5dp"
+         android:layout_marginLeft="10dp"
+
+         >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/hoadontenmon"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Gõi Đu Đu"
+        android:textColor="#1C1C1C"
+        android:textSize="20dp"
+android:autoSizeMaxTextSize="25dp"
+        android:autoSizeMinTextSize="15dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/img_delete_itemgiohang"
+        android:layout_width="40dp"
+        android:layout_gravity="right"
+        android:layout_height="40dp"
+        android:src="@drawable/trashcan"
+
+        android:layout_marginRight="10dp"/>
+</LinearLayout>
+
+
+         <TextView
+             android:id="@+id/hoadongia"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="20dp"
+             android:autoSizeMaxTextSize="35dp"
+             android:autoSizeMinTextSize="15dp"
+             android:text="Giá:120000"
+            android:layout_marginBottom="5dp"
+             android:textStyle="bold"
+             android:textColor="#FFA014"
+            />
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+             android:minWidth="320dp"
+             android:maxWidth="720dp"
+             android:orientation="horizontal"
+             >
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:orientation="horizontal"
+                 android:layout_weight="0.7"
+                 android:padding="5dp"
+                 android:layout_gravity="center">
+                 <FrameLayout
+                     android:id="@+id/framelayout_tru_hoadon"
+                     android:layout_width="0dp"
+                     android:layout_weight="0.15"
+                     android:layout_height="match_parent">
+                     <ImageView
+                         android:id="@+id/img_giamsl_giohang"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:background="@drawable/search_view"
+                         android:layout_gravity="center"
+
+
+                         />
+                     <ImageView
+
+                         android:layout_width="20sp"
+                         android:layout_height="20sp"
+                         android:src="@drawable/ic_baseline_remove_24"
+                         android:layout_gravity="center"
+
+
+
+                         />
+                 </FrameLayout>
+                 <FrameLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="0.2"
+                     android:layout_height="match_parent"
+                     android:layout_marginStart="10dp"
+                     android:layout_marginEnd="10dp"
+                     >
+                     <ImageView
+
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:background="@drawable/vien_bo_red"
+                         android:layout_gravity="center"
+                         />
+                     <TextView
+                         android:id="@+id/text_sl_giohang"
+                         android:layout_width="match_parent"
+                         android:autoSizeMaxTextSize="30dp"
+                         android:autoSizeMinTextSize="10dp"
+                         android:autoSizeStepGranularity="2sp"
+                         android:autoSizeTextType="uniform"
+
+                         android:layout_height="match_parent"
+                         android:textSize="10sp"
+                         android:gravity="center"
+                         android:textStyle="bold"
+
+                         android:textColor="@color/black"
+                         android:text="1"/>
+
+                 </FrameLayout>
+
+
+                 <FrameLayout android:id="@+id/framelayout_cong_hoadon"
+
+                     android:layout_width="0dp"
+                     android:layout_weight="0.15"
+                     android:layout_height="match_parent">
+                     <ImageView
+                         android:id="@+id/img_tangsl_giohang"
+                         android:layout_width="match_parent"
+
+                         android:layout_height="match_parent"
+                         android:background="@drawable/search_view"
+                         android:layout_gravity="center"
+
+
+                         />
+                     <ImageView
+                         android:layout_width="20sp"
+                         android:layout_height="20sp"
+                         android:src="@drawable/ic_baseline_add_24"
+                         android:layout_gravity="center"
+
+
+                         />
+                 </FrameLayout>
+             </LinearLayout>
+
+         </LinearLayout>
+         <!--      <TextView-->
+         <!--          android:id="@+id/tonggiamon"-->
+         <!--          android:layout_width="match_parent"-->
+         <!--          android:layout_height="wrap_content"-->
+         <!--          android:textSize="20dp"-->
+         <!--          android:layout_marginTop="10dp"-->
+         <!--          android:textStyle="bold"/>-->
+
+
+     </LinearLayout>
+
+ </FrameLayout>
+
+
+
+
+</LinearLayout>

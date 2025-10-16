@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Them_combo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:background="@drawable/rour_bac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn món Combo"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp">
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/spinner_them_combo"/>
+
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_them_combo"
+            android:layout_marginBottom="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+
+        android:orientation="horizontal">
+     <FrameLayout
+         android:layout_width="wrap_content"
+
+         android:layout_height="wrap_content"
+         >
+         <ImageView
+             android:layout_width="70dp"
+             android:layout_height="60dp"
+             android:layout_gravity="center"
+             android:padding="10dp"
+             android:id="@+id/img_danhsach_them_combo"
+             android:src="@drawable/ic_baseline_add_shopping_cart_24"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="1"
+             android:textSize="20dp"
+             android:textColor="#E40B0B"
+             android:textStyle="bold"
+             android:id="@+id/text_sl_mon_dathem"
+             android:layout_gravity="left|bottom"></TextView>
+
+     </FrameLayout>
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

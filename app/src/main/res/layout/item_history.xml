@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/view_search"
+
+    android:padding="8dp">
+    <TextView
+        android:id="@+id/text_maban_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã bàn:3"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/text_nvthu_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhân viên thu ngân:lê nam"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/text_tongbill_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng bill:478.000VND"
+        android:textSize="20dp"
+        android:textColor="#9F2020"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/text_date_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thời gian:"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#828A79"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/button_chitiet_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Chi Tiết"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:backgroundTint="#479FE4"
+        android:layout_gravity="right"/>
+
+</LinearLayout>

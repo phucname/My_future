@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:title="Home"
+        android:id="@+id/nemubanan"
+        android:icon="@drawable/ic_baseline_menu_24"/>
+
+    <item android:icon="@drawable/ic_baseline_backup_table_24"
+        android:title="Bàn"
+        android:id="@+id/ban"/>
+    <item android:title="Quản Lý"
+        android:id="@+id/quanly"
+        android:icon="@drawable/ic_baseline_co_present_24"/>
+    <item android:id="@+id/ds_donhang"
+        android:title="DS Order"
+        android:icon="@drawable/ic_baseline_restaurant_menu_24"
+        />
+
+<!--    <item android:id="@+id/giohang"-->
+<!--        android:title="Giỏ Hàng"-->
+<!--        android:icon="@drawable/ic_baseline_add_shopping_cart_24"/>-->
+<!--    <item android:id="@+id/chat"-->
+<!--        android:title="Thông Báo"-->
+<!--        android:icon="@drawable/ic_baseline_chat_24"/>-->
+
+
+</menu>

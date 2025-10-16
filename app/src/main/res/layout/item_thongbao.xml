@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/text_item_thongbao_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bạn"
+       android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:id="@+id/text_item_thongbao_noidung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bạn"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:textSize="25dp"
+        android:layout_marginBottom="5dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/black"/>
+</LinearLayout>

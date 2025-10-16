@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Activity.Them_loaimenu"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/search_view">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm Loại "
+        android:textSize="23dp"
+        android:gravity="center"
+      android:id="@+id/text_title_themloai"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Loại Món: "
+       android:textSize="20dp"
+       android:padding="5dp"
+       android:textStyle="bold"/>
+       <EditText
+           android:id="@+id/edit_themloai"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="loại món...."
+           android:textSize="20dp"/>
+   </LinearLayout>
+    <Button
+        android:id="@+id/button_themloai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#05AC0C"
+        android:text="Thêm Loại"
+        android:layout_marginBottom="5dp"
+        />
+
+
+</LinearLayout>

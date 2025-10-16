@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activity.ThemNhanVienActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:background="@drawable/bo_trang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+
+
+           >
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rour_bac"
+            android:text="Thêm Nhân Viên"
+            android:gravity="center"
+              android:id="@+id/text_title_themnv"
+              android:padding="12dp"
+              android:textColor="@color/white"
+              android:textStyle="bold"
+            android:textSize="22dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:id="@+id/img_themnhanvien"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/backgound_dangnhap"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+            <FrameLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edittext_tennv"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:background="@drawable/view_search"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="18dp"
+                    android:background="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:padding="5dp"
+                    android:textColor="#105083"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <EditText
+
+                    android:id="@+id/edittext_mailnv"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:background="@drawable/view_search"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="18dp"
+                    android:background="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:padding="5dp"
+                    android:textColor="#105083"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <EditText
+                    android:id="@+id/edittext_sdtnv"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:background="@drawable/view_search"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textSize="18dp"
+                    android:background="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:padding="5dp"
+                    android:textColor="#105083"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragmet_pass_nhanvien"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="65dp"
+                  android:orientation="horizontal"
+                  android:gravity="center"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:background="@drawable/view_search"
+                  >
+                  <EditText
+                  android:id="@+id/edittext_passnv"
+                  android:layout_width="0dp"
+                      android:layout_weight="1"
+                  android:layout_height="60dp"
+
+                 android:layout_margin="4dp"
+              android:gravity="center"
+                  android:background="@color/white"
+                  android:textSize="20dp"
+                  android:inputType="textPassword"
+
+                  />
+                  <ImageView
+                      android:id="@+id/img_vise_pass_themnv"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="0.2"
+                      android:padding="10dp"
+
+                      android:src="@drawable/ic_baseline_remove_red_eye_24"/>
+              </LinearLayout>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PassWord"
+                    android:textSize="18dp"
+                    android:background="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:padding="5dp"
+                    android:textColor="#105083"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+
+
+            <Button
+                android:id="@+id/button_themnv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Update"
+                      android:textAllCaps="false"
+                android:backgroundTint="#0AA610"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

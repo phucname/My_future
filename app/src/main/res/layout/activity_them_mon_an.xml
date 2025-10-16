@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ThemMonAn"  >
+
+<!--    android:background="#E2F3F3F3"-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:src="@drawable/backgound_dangnhap"-->
+<!--        android:scaleType="fitXY"></ImageView>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+            <TextView
+                android:id="@+id/text_title_themnom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Update Món Ăn"
+                android:gravity="center"
+                android:background="@drawable/rour_bac"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp"
+
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/imgthemhinh"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/search_view"
+                android:padding="5dp"
+                android:layout_gravity="center"
+
+                android:src="@drawable/icon"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="20dp">
+            </ImageView>
+
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/editthemtenmon"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:inputType="text"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:background="@drawable/search_view"
+                    > </EditText>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên Món"
+                    android:textColor="#148A19"
+                    android:background="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </FrameLayout>
+
+
+            <Spinner
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/spinner_loaimon"/>
+
+
+
+            <FrameLayout
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/editthemgia"
+                    android:layout_height="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:background="@drawable/search_view"
+                    >
+                </EditText>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá Món "
+                    android:background="@color/white"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#148A19"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <EditText
+                    android:id="@+id/editthemghichu"
+                    android:lines="4"
+                    android:gravity="top"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/search_view">
+
+                </EditText>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:text="Thông Tin Món"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#148A19"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"></TextView>
+            </FrameLayout>
+
+
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/buttonthem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Update "
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+
+
+                android:textColor="@color/white"
+                android:backgroundTint="#3647A3"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

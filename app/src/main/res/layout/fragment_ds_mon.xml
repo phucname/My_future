@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.Fragment_ds_mon"
+   >
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+          >
+          <ImageView
+              android:background="@drawable/vienblack"
+              android:layout_width="match_parent"
+              android:layout_height="130dp"
+              android:src="@drawable/logo"
+              android:padding="5dp"
+              android:layout_gravity="center"
+              android:layout_margin="5dp"
+              android:scaleType="fitXY"></ImageView>
+
+       </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+            <Spinner
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/spinner_timkiem_loai"
+                android:visibility="invisible"/>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_ds_monan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_search"
+                app:iconifiedByDefault="false"
+                app:queryHint="Search Món Ăn...."
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+
+                android:layout_marginBottom="5dp"
+                ></androidx.appcompat.widget.SearchView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Bộ Lọc:"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="italic"/>
+            <RadioGroup
+
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+             >
+                <RadioButton
+                    android:checked="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên"
+                    android:textSize="20dp"
+                    android:id="@+id/radio_tim_ten"
+                    android:layout_marginRight="10dp"/>
+                <RadioButton
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá"
+                    android:textSize="20dp"
+                    android:id="@+id/radio_tim_gia"
+                    android:layout_marginRight="10dp"/>
+                <RadioButton
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loại"
+                    android:textSize="20dp"
+                    android:id="@+id/radio_tim_loai"
+                    android:layout_marginRight="10dp"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerview_ds_mon"/>
+    </LinearLayout>
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_baseline_add_24"
+    android:layout_gravity="bottom|right"
+    android:layout_marginBottom="100dp"
+    android:id="@+id/floatbutton_them_mon"
+    android:layout_marginRight="50dp"/>
+
+</FrameLayout>

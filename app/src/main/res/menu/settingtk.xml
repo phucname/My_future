@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Quản Lý Nhà Hàng"
+        android:id="@+id/quan_ly_nhahang"
+        >
+        <menu >
+
+
+            <item android:title=" Thông Tin Nhà Hàng"
+                android:id="@+id/update_nhahang"/>
+
+            <item android:title="Quảng Cáo"
+                android:id="@+id/update_quangcao"/>
+
+            <item android:title="Thống Kê"
+                android:id="@+id/thongke"/>
+
+            <item android:id="@+id/lichsu"
+                android:title="Lịch Sử "/>
+
+            <item android:id="@+id/ds_mon"
+                android:title="Danh Sách Món Ăn"
+                />
+
+            <item android:id="@+id/ds_combo"
+                android:title="Danh Sách Combo"
+                />
+
+            <item android:id="@+id/ds_loai"
+                android:title="Danh Sách Loại" />
+            <item android:title=" Giảm Giá"
+                android:id="@+id/giamgia"/>
+
+        </menu>
+    </item>
+
+
+    <item android:title="Đăng Xuất"
+        android:id="@+id/dangxuat_menu"
+        />
+    <item android:title="Đăng Nhập"
+        android:id="@+id/dangnhap_menu"
+        />
+    <item android:id="@+id/edit_pass"
+        android:title="Đổi Mật Khẩu"
+        />
+
+
+
+
+
+</menu>

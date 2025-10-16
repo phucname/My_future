@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Quan_Ly_Tai_Khoan"
+    android:background="#747CA6"
+   >
+<!--    android:background="@drawable/backfound_dangnhap">-->
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+      >
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:background="@drawable/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:backgroundTint="@color/white"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="Danh Sách Nhân Viên"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textStyle="italic|bold"
+                android:textColor="#084F87"
+               />
+            <ListView
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listview_nhanvien"/>
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_add_24"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/float_them_nhanvien"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+</FrameLayout>

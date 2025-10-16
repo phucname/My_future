@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DangNhapActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@drawable/backgound_dangnhap"
+       ></ImageView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:minWidth="400dp"
+        android:maxWidth="700dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50px"
+        android:background="@drawable/bo_trang"
+        android:alpha="0.7"
+
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng Nhập"
+            android:textColor="#1127A6"
+            android:textSize="30dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            />
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="80dp"
+          android:layout_marginBottom="20dp"
+          >
+          <EditText
+              android:id="@+id/email"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:layout_gravity="center"
+              android:background="@drawable/search_view"
+              android:textSize="22dp"
+              android:inputType="textEmailAddress"
+              android:layout_marginTop="10dp"
+             android:layout_marginBottom="3dp"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Email"
+              android:textColor="@color/black"
+              android:textStyle="bold"
+              android:background="@color/white"
+              android:textSize="20dp"
+              android:paddingLeft="5dp"
+              android:paddingRight="5dp"
+              android:layout_marginLeft="20dp"/>
+
+
+      </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
+            >
+
+               <LinearLayout
+
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:background="@drawable/search_view"
+
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="5dp"
+                   android:orientation="horizontal"
+                   >
+                   <EditText
+                       android:id="@+id/pass"
+                       android:layout_margin="5dp"
+                   android:layout_width="0dp"
+                       android:layout_weight="1"
+                   android:layout_height="match_parent"
+                   android:textSize="22dp"
+                       android:gravity="center"
+                 android:inputType="numberPassword"
+                   android:background="@color/white">
+               </EditText>
+                       <FrameLayout
+                           android:layout_width="0dp"
+                           android:id="@+id/img_eye"
+                           android:layout_weight="0.2"
+                           android:layout_height="match_parent"
+                           android:layout_marginLeft="5dp">
+                           <ImageView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:src="@drawable/ic_baseline_remove_red_eye_24"
+                               android:layout_margin="10dp"
+                               android:layout_gravity="center"></ImageView>
+                       </FrameLayout>
+                   </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PassWord"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@color/white"
+                android:textSize="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginLeft="20dp"/>
+
+
+        </FrameLayout>
+
+
+
+
+
+
+
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/dangnhap"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Đăng Nhập"
+            android:layout_gravity="center"
+
+            android:background="@drawable/backgound_dangnhap_linelayout">
+
+        </Button>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng Ký"
+                android:textSize="20dp"
+                android:textColor="#B81206"
+                android:layout_marginRight="70dp"
+                android:textStyle="italic"
+                android:id="@+id/textdangky">
+
+
+            </TextView>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Quên Mật Khâu"-->
+<!--                android:textSize="20dp"-->
+<!--                android:id="@+id/text_quenmk"-->
+<!--                android:textColor="#BA0DD8"-->
+
+<!--                >-->
+
+
+<!--            </TextView>-->
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

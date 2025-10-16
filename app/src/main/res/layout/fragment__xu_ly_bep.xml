@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Fragment_XuLyBep">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Danh Sách Món Oder"
+           android:textSize="22dp"
+           android:background="@drawable/rour_bac"
+           android:gravity="center"
+           android:padding="10dp"
+           android:textColor="#FFFFFF"
+           android:layout_marginBottom="10dp"/>
+       <!-- TODO: Update blank fragment layout -->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:textColor="@color/black"
+               android:background="#8BB6B6B6"
+               android:id="@+id/button_ds_mon_oder1"
+               android:layout_width="0dp"
+               android:padding="10dp"
+               android:gravity="center"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:text="Chưa Nhận"></TextView>
+           <TextView
+               android:textColor="@color/black"
+               android:background="#8B9A9595"
+
+               android:padding="10dp"
+               android:gravity="center"
+               android:layout_marginRight="10dp"
+               android:id="@+id/button_ds_mon_oder2"
+               android:layout_width="0dp"
+               android:text="Đã Nhận"
+               android:layout_marginLeft="10dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"></TextView>
+       </LinearLayout>
+
+       <ListView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+
+           android:id="@+id/listview_mon_bep"
+
+           />
+   </LinearLayout>
+
+
+
+
+
+
+</FrameLayout>

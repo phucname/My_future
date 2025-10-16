@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.Fragment_ds_combo"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    >
+    <ImageView
+        android:background="@drawable/vienblack"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/logo"
+        android:padding="9dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"></ImageView>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_ds_combo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_search"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search Món Ăn...."
+                    android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            ></androidx.appcompat.widget.SearchView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Bộ Lọc:"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+        <RadioGroup
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/radio_group_combo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="Tên"
+                android:textSize="20dp"
+                android:id="@+id/radio_tim_ten_combo"
+                android:layout_marginRight="10dp"
+                android:checked="true"/>
+            <RadioButton
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="Giá"
+                android:textSize="20dp"
+                android:id="@+id/radio_tim_gia_combo"
+                android:layout_marginRight="10dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/recyclerview_ds_combo"/>
+
+</LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/float_them_combo"
+        android:src="@drawable/ic_baseline_add_24"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="60dp"
+        />
+</FrameLayout>

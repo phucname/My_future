@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="#4ABAB3B3"
+    tools:context=".Activity.select_nhieuhinh"
+
+    >
+ <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+
+     android:background="@color/white">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  android:text="Quảng Cáo"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+  android:textSize="20dp"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_marginBottom="10dp"
+  android:background="@drawable/bach_roi_orga"
+    />
+
+
+
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview_seclehinh"/>
+
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quảng Cáo Đang Chạy"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/rour_bac"
+        android:textColor="#FFFFFF"
+        />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerview_quangcao_cu"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+  </LinearLayout>
+
+
+</ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_selecthinh"
+        android:layout_gravity="right"
+        android:layout_marginTop="80dp"
+
+        android:src="@drawable/ic_baseline_add_24"
+
+        android:padding="5dp"
+
+
+        />
+
+    <Button
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+
+   android:textAllCaps="false"
+android:backgroundTint="#4B711E"
+android:id="@+id/danglen"
+    android:text="Update Load"
+android:layout_gravity="bottom"
+/>
+    </FrameLayout>

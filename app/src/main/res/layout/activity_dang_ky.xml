@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:minWidth="400dp"
+    android:maxWidth="800dp"
+    android:layout_height="match_parent"
+  android:orientation="vertical"
+    tools:context=".Activity.DangKyActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:alpha="0.8"
+        android:background="@drawable/bo_trang"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng Ký"
+            android:background="@drawable/rour_bac"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="13dp"
+            android:textColor="#FFFFFF"
+
+            ></TextView>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/img_dangky"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/backgound_dangnhap"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@drawable/vienblack"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="4dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:minWidth="25dp"
+                android:maxWidth="100dp"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/ic_baseline_email_24">
+
+            </ImageView>
+            <EditText
+                android:id="@+id/editemail"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:hint="Email"
+                android:padding="5dp"
+                android:layout_marginStart="7dp"
+                android:textColorHint="#5C5655"
+                android:paddingStart="10dp"
+                android:background="#00000000"
+                android:inputType="textEmailAddress"
+                android:autoSizeMaxTextSize="40dp"
+                android:autoSizeMinTextSize="15dp"
+                android:textSize="20dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@drawable/vienblack"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="4dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/ic_baseline_person_24">
+
+            </ImageView>
+            <EditText
+                android:id="@+id/edittennguoidung"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:hint="Tên Người Dùng"
+                android:layout_marginStart="7dp"
+                android:padding="10dp"
+                android:background="#00000000"
+                android:textColorHint="#5C5655"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@drawable/vienblack"
+            android:layout_marginBottom="10dp"
+            android:padding="4dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/ic_baseline_phone_24">
+
+            </ImageView>
+            <EditText
+                android:id="@+id/edit_dk_sdt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Số Điện Thoại"
+                android:inputType="number"
+                android:layout_marginStart="7dp"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:background="#00000000"
+                android:textColorHint="#5C5655"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@drawable/vienblack"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="4dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/ic_baseline_key_24">
+
+            </ImageView>
+            <EditText
+                android:id="@+id/editmatkhau1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+
+                android:layout_height="match_parent"
+                android:hint="Mật Khẩu"
+                android:inputType="numberPassword"
+                android:padding="10dp"
+                android:layout_marginStart="7dp"
+                android:textSize="20dp"
+                android:textColorHint="#5C5655"
+                android:background="#00000000"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:id="@+id/img_dangky_pass"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_remove_red_eye_24"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@drawable/vienblack"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="4dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/ic_baseline_key_24">
+
+            </ImageView>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editmatkhau2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+
+                android:layout_height="match_parent"
+                android:hint="Nhập Lại Mật Khẩu"
+                android:inputType="numberPassword"
+                android:background="#00000000"
+                android:layout_marginStart="7dp"
+                app:strokeColor="#B34141"
+                android:padding="10dp"
+                android:textColorHint="#5C5655"
+                android:textSize="20dp"
+
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:id="@+id/img_dangky_pass1"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/ic_baseline_remove_red_eye_24"
+                />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttondangky"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Đăng Ký"
+            android:textSize="20dp"
+            android:backgroundTint="#3F51B5"
+            android:layout_gravity="center"
+            app:cornerRadius="12dp"
+            android:padding="10dp"
+            app:strokeColor="#E9B34141"
+            app:strokeWidth="2dp"
+            android:layout_margin="20dp"
+            >
+
+        </com.google.android.material.button.MaterialButton>
+        <!--        <androidx.appcompat.widget.AppCompatAutoCompleteTextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textSize="20dp"-->
+        <!--            android:text="Đăng Nhập"-->
+        <!--            android:textColor="#06C10E"-->
+        <!--            android:textStyle="italic"-->
+        <!--            android:layout_gravity="right"-->
+        <!--            ></androidx.appcompat.widget.AppCompatAutoCompleteTextView>-->
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+</LinearLayout>

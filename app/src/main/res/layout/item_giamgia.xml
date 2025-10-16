@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/item_linear_giamgia">
+    <ImageView
+        android:id="@+id/item_img_giamgia"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/backgound_dangnhap"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/item_text_ten_giamgia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gõi Đu Đu"
+                android:textColor="#1C1C1C"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá"
+                    android:textSize="18dp"
+                    android:textColor="#F33023"
+                    android:id="@+id/item_text_gia_giamgia"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100000.đ"
+                    android:textSize="18dp"
+                    android:textColor="#F33023"
+                    android:id="@+id/item_text_giasogiam"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+            android:orientation="horizontal">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Giảm Giá"
+                   android:textSize="17dp"
+                   android:layout_marginRight="15dp"
+                   android:id="@+id/item_text_gtkguyenmai"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Thời gian"
+                   android:textSize="17dp"
+                   android:id="@+id/item_text_tg_khuyenmai"
+                   />
+           </LinearLayout>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/item_check_giamgia"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top" />
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

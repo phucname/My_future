@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="7dp"-->
+<!--                android:background="#6FC808"/>-->
+<!--            <ImageView-->
+
+<!--                android:id="@+id/img_monan_bepxl"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:src="@drawable/backgound_dangnhap"-->
+<!--                android:layout_gravity="center"/>-->
+<!--            <TextView-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:id="@+id/text_tenmon_bepxl"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Gà Hầm"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:textSize="25sp"-->
+<!--                android:textColor="#0C0B0E"-->
+<!--                android:textStyle="bold"-->
+<!--                />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_weight="0.5"-->
+<!--                    android:text="Số lượng:"-->
+<!--                    android:textColor="#918D8C"-->
+
+<!--                    android:textSize="25dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/text_slmon_bepxl"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="25sp"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:textStyle="bold"-->
+
+<!--                    android:text="0"-->
+<!--                    android:textColor="#EF3A03"-->
+<!--                    />-->
+<!--            </LinearLayout>-->
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="4dp"-->
+<!--                android:background="#F8A730"-->
+<!--                android:layout_marginBottom="20dp"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="10dp"-->
+
+<!--                android:text="Yêu cầu khách hàng"-->
+<!--                android:textColor="#FF9800"-->
+<!--                android:textSize="25dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginBottom="10dp"/>-->
+<!--            <TextView-->
+
+<!--                android:id="@+id/text_yeucaukhachhang_bepxl"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:paddingStart="10dp"-->
+<!--                android:textColor="#7C7272"-->
+<!--                android:text="bitter 3 sống"-->
+<!--                android:textSize="25dp" />-->
+
+
+
+
+<!--            <Button-->
+<!--                android:id="@+id/button_hoanthanhmonan_bepxl"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:text="Hoàn Thành"-->
+<!--                android:gravity="center"-->
+<!--                android:textSize="15dp"-->
+<!--                android:layout_gravity="bottom"-->
+<!--                android:backgroundTint="#8BC34A"-->
+
+
+<!--                />-->
+
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+
+
+
+
+
+</FrameLayout>

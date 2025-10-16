@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Sửa ComBo"
+    android:id="@+id/sua_combo"/>
+    <item android:title="Xóa ComBo"
+        android:id="@+id/xoa_combo"/>
+</menu>

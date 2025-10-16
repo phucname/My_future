@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activity.TrangChuActivuty">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#8FD0D5CB">
+            <ImageView
+                android:layout_width="150dp"
+               android:scaleType="fitXY"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Welcome  To Me"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#E39D36"
+                android:layout_marginStart="20dp"
+                android:autoSizeMaxTextSize="30dp"
+                android:textSize="30dp"></TextView>
+
+        </LinearLayout>
+<!--    <TextView-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Danh Sách Nhà Hàng"-->
+<!--        android:textSize="30dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:autoSizeMinTextSize="20dp"-->
+<!--        android:autoSizeMaxTextSize="35dp"-->
+<!--        android:background="#0064B3"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="#FF9800"-->
+
+<!--        />-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#EA9D2B"/>
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/spinner"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp">
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_huyen"
+            android:layout_marginRight="5dp"/>
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_xa"
+            />
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tìm Kiếm"
+        android:id="@+id/button_timnhahang"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="5dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#06BA0D"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:background="#52FFFFFF"
+        android:id="@+id/listtrangchu"></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_taonhahang"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|right"
+        android:text="Tạo Nhà hàng"
+        android:src="@drawable/ic_baseline_add_24"
+        android:backgroundTint="#5B9E0D"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</FrameLayout>

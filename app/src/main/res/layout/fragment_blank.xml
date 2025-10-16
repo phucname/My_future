@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="100dp"
+    tools:context=".Activity.HomeActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+   <ListView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/list_item"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:id="@+id/buttonmenuthem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="50dp"
+
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_add_circle_outline_24">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</FrameLayout>

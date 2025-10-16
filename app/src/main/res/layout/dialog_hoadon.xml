@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_marginBottom="100dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên Nhà Hàng"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:textColor="#EA9210"
+        android:textStyle="bold"
+       android:layout_marginTop="10dp"
+        android:id="@+id/text_tennhahang_dialog_hd"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="địa chỉ"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/text_diachinhahang_dialog_hd"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hóa Đơn"
+        android:textSize="16dp"
+        android:gravity="center"
+
+        android:textColor="@color/black"
+        android:textStyle="bold"
+      />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số Bàn"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/text_bannhahang_dialog_hd"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên nhân viên"
+        android:textSize="16dp"
+
+        android:padding="4dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/text_tennv_dialog_hd"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="STT"
+            android:gravity="center"
+           />
+        <TextView
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:text="Tên Món"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="SL"/>
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:text="Đơn Giá"/>
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="Thành Tiền"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_buile_hd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_gravity="bottom|right">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:id="@+id/text_dialog_tonghd"
+           android:paddingTop="5dp"
+           android:text="Tổng:"
+           android:paddingBottom="5dp"
+           android:gravity="center"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/dialog_hoadon_button_cancel"
+           android:text="CanCel"
+           android:textSize="14dp"
+          android:layout_gravity="right"
+           android:paddingRight="20dp"
+           android:paddingLeft="20dp"
+           android:backgroundTint="#975151"/>
+   </LinearLayout>
+
+</FrameLayout>
